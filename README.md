@@ -1,6 +1,6 @@
 # 🚀 Fintech Loan Portfolio Analysis
 
-This project analyzes a relational dataset from the `cloud-training-demos.fintech` BigQuery repository to develop a **Low-Risk Customer Segment Profile** and an optimized lending strategy, following the **CRISP-DM** methodology. The final output is a set of actionable success rates derived from cleaned, engineered data.
+This project analyzes a relational dataset from the https://www.kaggle.com/datasets/mustafakeser4/bigquery-fintech-dataset to develop a **Low-Risk Customer Segment Profile** and an optimized lending strategy, following the **CRISP-DM** methodology. The final output is a set of actionable success rates derived from cleaned, engineered data.
 
 ## 🎯 Business Objectives
 
@@ -52,5 +52,5 @@ The initial analysis (`eda.sql`) provided actionable, non-obvious insights into 
 | Segment Analyzed | Key Discovery | Business Implication |
 | :--- | :--- | :--- |
 | **Verification Status** | Loans with **"Source not verified"** status had a success rate that was **$\approx 8$ percentage points higher** than those that were "Source verified" (e.g., $81.82\%$ vs. $74.13\%$). | **Counter-Intuitive Insight:** The model must penalize 'Source verified' status, suggesting lender over-reliance or external wealth of unverified applicants. |
-| **Income Category** | The **Affluent** segment ($\ge \$166\text{k}$) had a $\mathbf{7\%}$ higher success rate than the Lower Income segment ($\le \$47\text{k}$). | The risk differential is highly significant on a large portfolio; confirms the Affluent segment as the primary acquisition target. |
-| **Employment Sector** | **Government/Public** and **Finance/Accounting** sectors demonstrated the highest loan success rates ($\approx 82\%$). | Marketing efforts should be prioritized toward job titles in these stable sectors. |
+| **Income Category** | The **Affluent** segment had a $\mathbf{7\%}$ higher success rate than the Lower Income segment. | The risk differential is highly significant on a large portfolio; confirms the Affluent segment as the primary acquisition target. |
+| **Employment Sector** | **Government/Public** and **Finance/Accounting** sectors demonstrated the highest loan success rates ($\approx 82\%$)%. | Marketing efforts should be prioritized toward job titles in these stable sectors. |
